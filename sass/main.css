@@ -1,0 +1,62 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-image {
+  width: 300px;
+  margin: auto;
+}
+
+.slider-image img {
+  max-width: 400px;
+  position: absolute;
+  z-index: -1;
+}
+
+.body-slide {
+  position: absolute;
+  text-align: center;
+  color: red;
+  top: 0px;
+}
+
+.arrow span {
+  position: relative;
+  top: 120px;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.arrow #leftArrow {
+  left: 20px;
+}
+
+.arrow #rightArrow {
+  left: 340px;
+}
+
+.dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 180px;
+  left: 170px;
+}
+
+.dots:hover {
+  background: #717171;
+}
+
+.active {
+  background: #717171;
+}
+/*# sourceMappingURL=main.css.map */
