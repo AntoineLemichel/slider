@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slider-image {
+  width: 300px;
+  margin: auto;
+  img {
+    border: 2px solid #717171;
+    max-width: 400px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 9px;
+    animation-name: fade;
+    animation-duration: 0.7s;
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+      to {
+        opacity: 1
+      }
+    }
+  }
+}
+
+.slider {
+  display: none;
+}
+
+.body-slide {
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  position: relative;
+  top: 200px;
+  width: 100%;
+  left: 50px;
+  text-align: center;
+  display: none;
+}
+
+.arrow {
+  span {
+    position: relative;
+    top: 83px;
+    color: #bbb;
+    font-size: 2rem;
+    font-weight: bold;
+    width: auto;
+    padding: 16px;
+    cursor: pointer;
+    transition: 0.6s ease;
+    &:hover {
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 0 4px 4px 0;
+      width: 200px;
+      margin: auto;
+      color: #717171;
+    }
+  }
+  #rightArrow {
+    left: 100%;
+    &:hover {
+      border-radius: 4px 0 0 4px;
+    }
+  }
+}
+
+.dots {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 20%;
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  top: 175px;
+  left: 170px;
+  &:hover {
+    background: #717171;
+  }
+}
+
+.active {
+  background: #717171;
+}

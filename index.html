@@ -1,10 +1,10 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html class="no-js" lang="fr">
 
 <head>
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title></title>
+  <title>Slider JS</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -13,6 +13,7 @@
   <!-- Place favicon.ico in the root directory -->
 
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="sass/main.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,19 +23,61 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <h1>Slider with JS</h1>
+  <div class="slider" id="slider">
+    <div class="slider-image" id="slider-image">
+      <div class="slide">
+        <img src="img/boxer-640.jpg" alt="First Image Slider">
+        <div class="body-slide" id="body-slide">
+          This a Boxer picture
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/fitness-640.jpg" alt="Second Image Slider">
+        <div class="body-slide" id="body-slide">
+          This a Fitness picture
+        </div>
+      </div>
+      <div class="slide">
+        <img src="img/jogging-640.jpg" alt="Three Image Slider">
+        <div class="body-slide" id="body-slide">
+          This a Jogging picture
+        </div>
+      </div>
+      <div class="arrow" id="arrow">
+        <span id="leftArrow" onclick="slideArrows(-1)">
+          <</span>
+            <span id="rightArrow" onclick="slideArrows(1)">></span>
+      </div>
+      <div>
+        <span class="dots" onclick="slideCurrent(1)"></span>
+        <span class="dots" onclick="slideCurrent(2)"></span>
+        <span class="dots" onclick="slideCurrent(3)"></span>
+      </div>
+    </div>
+  </div>
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
+
+  </script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
-    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
-    ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
+    window.ga = function () {
+      ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto');
+    ga('send', 'pageview')
+
   </script>
-  <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+  <!-- <script src="https://www.google-analytics.com/analytics.js" async defer></script> -->
 </body>
 
 </html>
