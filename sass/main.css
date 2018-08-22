@@ -3,39 +3,96 @@ body {
   margin: 0;
   padding: 0;
 }
-
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+  /* color:  red; */
+  text-align: center;
+  border-bottom: 3px solid black;
+  max-width: 200px;
+  margin: auto;
+  margin-bottom: 20px;
+}
 .slider-image {
   width: 300px;
   margin: auto;
 }
 
 .slider-image img {
+  border: 2px solid #717171;
   max-width: 400px;
   position: absolute;
-  z-index: -1;
+  /* z-index: -1; */
+  border-radius: 9px;
+  -webkit-animation-name: fade;
+  animation-name: fade;
+  -webkit-animation-duration: 0.7s;
+  animation-duration: 0.7s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: .4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slider {
+  display: none;
+  margin: auto;
 }
 
 .body-slide {
-  position: absolute;
+  color: #f2f2f2;
+  font-size: 1.2rem;
+  position: relative;
+  top: 200px;
+  width: 100%;
+  left: 50px;
   text-align: center;
-  color: red;
-  top: 0px;
+  display: none;
+  font-weight: bold;
 }
 
 .arrow span {
   position: relative;
-  top: 120px;
-  color: white;
+  top: 83px;
+  color: #bbb;
   font-size: 2rem;
+  font-weight: bold;
+  width: auto;
+  padding: 16px;
   cursor: pointer;
+  -webkit-transition: 0.6s ease;
+  transition: 0.6s ease;
+  text-align: unset;
 }
 
-.arrow #leftArrow {
-  left: 20px;
+.arrow span:hover {
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 0 4px 4px 0;
+  width: 200px;
+  margin: auto;
+  color: #717171;
 }
 
 .arrow #rightArrow {
-  left: 340px;
+  left: 100%;
+}
+
+.arrow #rightArrow:hover {
+  border-radius: 4px 0 0 4px;
 }
 
 .dots {
@@ -44,11 +101,11 @@ body {
   width: 15px;
   margin: 0 2px;
   background-color: #bbb;
-  border-radius: 50%;
+  border-radius: 20%;
   display: inline-block;
   text-align: center;
   position: relative;
-  top: 180px;
+  top: 175px;
   left: 170px;
 }
 
