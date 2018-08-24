@@ -34,10 +34,6 @@ body {
   }
 }
 
-.slider {
-  display: none;
-}
-
 .body-slide {
   color: #f2f2f2;
   font-size: 1.2rem;
@@ -75,24 +71,10 @@ body {
     }
   }
 }
-
-.dots {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 20%;
-  display: inline-block;
-  text-align: center;
+#text {
   position: relative;
-  top: 175px;
-  left: 170px;
-  &:hover {
-    background: #717171;
-  }
-}
-
-.active {
-  background: #717171;
+  color: white;
+  font-size: 2rem;
+  margin: auto;
+  top: 100px;
 }

@@ -3,6 +3,9 @@ let imageArray = ["img/boxer.jpg", "img/fitness.jpg", "img/jogging.jpg"];
 let index = 0;
 const INDEXMAX = imageArray.length - 1;
 let timer = setInterval(sliderAuto, 3000);
+let text = document.getElementById("text");
+text.innerHTML = "Picture's Boxer";
+
 
 
 
@@ -15,9 +18,21 @@ function sliderAuto() {
     index++;
   }
 
+  //Adding text on pictures.
+  if (index == 0) {
+    text.innerHTML = "Picture's Boxer";
+  } else if (index == 1) {
+    text.innerHTML = "Picture's Fitness";
+  } else if (index == 2) {
+    text.innerHTML = "Picture's Jogging";
+  } else {
+    text.innerHTML = "Unknow picture";
+  }
   //Change src img into HTML, with array and index.
   image.src = imageArray[index];
 }
+
+
 
 //This function, manage left arrow click.
 document.getElementById("leftArrow").addEventListener("click", function () {
