@@ -48,11 +48,6 @@ h1 {
   }
 }
 
-.slider {
-  display: none;
-  margin: auto;
-}
-
 .body-slide {
   color: #f2f2f2;
   font-size: 1.2rem;
@@ -93,27 +88,5 @@ h1 {
 
 .arrow #rightArrow:hover {
   border-radius: 4px 0 0 4px;
-}
-
-.dots {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 20%;
-  display: inline-block;
-  text-align: center;
-  position: relative;
-  top: 175px;
-  left: 170px;
-}
-
-.dots:hover {
-  background: #717171;
-}
-
-.active {
-  background: #717171;
 }
 /*# sourceMappingURL=main.css.map */
